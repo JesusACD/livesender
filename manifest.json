@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LiveSender",
+  "version": "1.0",
+  "description": "Publica automáticamente comentarios en el chat de un live de Farlight 84.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Iniciar Bot"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
